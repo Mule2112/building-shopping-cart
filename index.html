@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dessert Shop & Shopping Cart</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Delicious Desserts</h1>
+      <p class="subtitle">Freshly baked and delivered to your door</p>
+    </header>
+
+    <main class="shop-layout">
+      <section class="products-section">
+        <div id="dessert-card-container" class="dessert-grid">
+          <div class="dessert-card">
+            <div class="card-image">🧁</div>
+            <h3 class="dessert-name">Vanilla Cupcake</h3>
+            <p class="dessert-price">$2.99</p>
+            <button class="add-to-cart-btn" id="1">Add to Cart</button>
+          </div>
+
+          <div class="dessert-card">
+            <div class="card-image">🍪</div>
+            <h3 class="dessert-name">Chocolate Cookie</h3>
+            <p class="dessert-price">$1.50</p>
+            <button class="add-to-cart-btn" id="2">Add to Cart</button>
+          </div>
+
+          <div class="dessert-card">
+            <div class="card-image">🍰</div>
+            <h3 class="dessert-name">Strawberry Cake</h3>
+            <p class="dessert-price">$5.99</p>
+            <button class="add-to-cart-btn" id="3">Add to Cart</button>
+          </div>
+
+          <div class="dessert-card">
+            <div class="card-image">🍩</div>
+            <h3 class="dessert-name">Glazed Donut</h3>
+            <p class="dessert-price">$1.25</p>
+            <button class="add-to-cart-btn" id="4">Add to Cart</button>
+          </div>
+        </div>
+      </section>
+
+      <aside class="cart-sidebar" id="cart-container">
+        <div class="cart-header">
+          <h2>Your Cart</h2>
+          <span class="items-count-badge"><span id="total-items">0</span> items</span>
+        </div>
+
+        <div id="products-container" class="cart-items-list">
+          </div>
+
+        <div class="cart-calculations">
+          <div class="calc-row">
+            <span>Subtotal</span>
+            <span id="subtotal">$0.00</span>
+          </div>
+          <div class="calc-row">
+            <span>Taxes (8.25%)</span>
+            <span id="taxes">$0.00</span>
+          </div>
+          <div class="calc-row total-row">
+            <span>Total</span>
+            <span id="total">$0.00</span>
+          </div>
+          
+          <div class="cart-actions">
+            <button id="clear-cart-btn" class="secondary-btn">Clear Cart</button>
+            <button id="checkout-btn" class="primary-btn">Checkout</button>
+          </div>
+        </div>
+      </aside>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
